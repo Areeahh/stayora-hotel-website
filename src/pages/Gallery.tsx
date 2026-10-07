@@ -17,8 +17,8 @@ export default function Gallery() {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-4">Visual Story</p>
+      <section className="pt-28 pb-10 max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
+        <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">Visual Story</p>
         <h1 className="font-display text-5xl md:text-6xl text-[color:var(--color-navy-deep)] mb-10">
           <RevealText text="Gallery" />
         </h1>
@@ -42,7 +42,7 @@ export default function Gallery() {
       </section>
 
       <section className="max-w-[1400px] mx-auto px-6 lg:px-10 pb-28">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-5 [column-fill:_balance]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <AnimatePresence>
             {filtered.map((img, i) => (
               <motion.button
@@ -53,9 +53,9 @@ export default function Gallery() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4, delay: i * 0.03 }}
                 onClick={() => setLightboxImg(img)}
-                className="mb-5 w-full block rounded-2xl overflow-hidden group relative break-inside-avoid"
+                className="block w-full aspect-[4/5] rounded-2xl overflow-hidden group relative"
               >
-                <img src={img.url} alt={img.alt} className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={img.url} alt={img.alt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-[color:var(--color-navy-deep)]/0 group-hover:bg-[color:var(--color-navy-deep)]/20 transition-colors flex items-end p-4 opacity-0 group-hover:opacity-100">
                   <span className="text-white text-xs uppercase tracking-wide">{img.category}</span>
                 </div>

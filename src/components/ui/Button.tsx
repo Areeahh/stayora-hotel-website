@@ -4,7 +4,7 @@ import { cn } from '../../utils/cn';
 import { ArrowRight } from 'lucide-react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'gold-dark' | 'glass';
   size?: 'sm' | 'md' | 'lg';
   icon?: boolean;
   children: ReactNode;
@@ -22,6 +22,8 @@ export function Button({ variant = 'primary', size = 'md', icon = false, classNa
     secondary: 'bg-[color:var(--color-navy-deep)] text-[color:var(--color-warm-white)] hover:bg-[color:var(--color-navy-mid)] rounded-full',
     outline: 'border border-[color:var(--color-gold-champagne)]/60 text-current hover:border-[color:var(--color-gold-champagne)] hover:bg-[color:var(--color-gold-champagne)]/10 rounded-full',
     ghost: 'text-current hover:opacity-70',
+    'gold-dark': 'bg-[#9C6E2B] text-[color:var(--color-warm-white)] hover:bg-[#B8853A] rounded-full shadow-[0_6px_18px_rgba(156,110,43,0.35)]',
+    glass: 'backdrop-blur-md bg-white/10 border-2 border-white text-[color:var(--color-warm-white)] hover:bg-[color:var(--color-warm-white)] hover:text-[color:var(--color-navy-deep)] rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.25)]',
   };
 
   return (

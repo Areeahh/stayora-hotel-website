@@ -8,12 +8,12 @@ import { Button } from '../ui/Button';
 
 export function RoomsPreview() {
   return (
-    <section className="py-28 md:py-36 bg-[color:var(--color-gray-subtle)]/10">
+    <section className="py-16 md:py-20 bg-[color:var(--color-gray-subtle)]/10">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-6">
           <div>
             <Reveal>
-              <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-4">
+              <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">
                 Accommodations
               </p>
             </Reveal>
@@ -45,15 +45,15 @@ export function RoomsPreview() {
 
 export function ExperiencesTeaser() {
   return (
-    <section className="py-28 md:py-36 bg-[color:var(--color-navy-deep)] text-[color:var(--color-warm-white)] relative overflow-hidden">
+    <section className="py-16 md:py-20 bg-[color:var(--color-navy-deep)] text-[color:var(--color-warm-white)] relative overflow-hidden">
       <div
         className="absolute top-0 left-1/3 w-96 h-96 rounded-full opacity-20 blur-[120px] pointer-events-none"
         style={{ background: 'radial-gradient(circle, #C9A45C 0%, transparent 70%)' }}
       />
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 relative z-10">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <Reveal>
-            <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-4">
+            <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">
               Curated Living
             </p>
           </Reveal>
@@ -73,7 +73,7 @@ export function ExperiencesTeaser() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-navy-deep)] via-[color:var(--color-navy-deep)]/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-7">
-                  <p className="text-[10px] tracking-[0.2em] uppercase text-[color:var(--color-gold-soft)] mb-2">{exp.category}</p>
+                  <p className="text-xs tracking-[0.15em] uppercase font-semibold text-[color:var(--color-gold-soft)] mb-2">{exp.category}</p>
                   <h3 className="font-display text-2xl">{exp.name}</h3>
                 </div>
               </Link>

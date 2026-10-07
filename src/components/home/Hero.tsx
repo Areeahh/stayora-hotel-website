@@ -34,7 +34,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="text-[11px] md:text-xs tracking-[0.35em] uppercase text-[color:var(--color-gold-soft)] mb-6"
+          className="text-sm md:text-base tracking-[0.3em] uppercase font-semibold text-[color:var(--color-gold-soft)] mb-6"
         >
           Escape The Ordinary
         </motion.p>
@@ -63,7 +63,7 @@ export function Hero() {
           <Button variant="primary" size="lg" icon onClick={() => navigate('/rooms')}>
             Explore Rooms
           </Button>
-          <Button variant="outline" size="lg" className="text-[color:var(--color-warm-white)]" onClick={() => navigate('/booking')}>
+          <Button variant="glass" size="lg" onClick={() => navigate('/booking')}>
             Book Your Stay
           </Button>
         </motion.div>

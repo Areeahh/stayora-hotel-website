@@ -20,7 +20,7 @@ export default function Dashboard() {
 
   return (
     <Layout>
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 pb-24">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-28 pb-24">
         <h1 className="font-display text-4xl text-[color:var(--color-navy-deep)] mb-10">Welcome back, Amara</h1>
 
         <div className="grid lg:grid-cols-[280px_1fr] gap-10">

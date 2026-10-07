@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, X, Search, User } from 'lucide-react';
+import { Menu, X, User } from 'lucide-react';
 import { useScrolled } from '../../hooks/useScrolled';
 import { cn } from '../../utils/cn';
 import { Button } from '../ui/Button';
@@ -61,9 +61,6 @@ export function Navbar() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-5">
-            <button aria-label="Search" className="text-[color:var(--color-warm-white)]/80 hover:text-[color:var(--color-gold-soft)] transition-colors">
-              <Search className="w-4 h-4" />
-            </button>
             <Link to="/login" className="flex items-center gap-1.5 text-[11px] tracking-[0.18em] uppercase text-[color:var(--color-warm-white)]/85 hover:text-[color:var(--color-gold-soft)] transition-colors">
               <User className="w-4 h-4" /> Login
             </Link>

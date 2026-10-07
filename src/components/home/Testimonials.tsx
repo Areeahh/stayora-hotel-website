@@ -18,14 +18,14 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-28 md:py-36 bg-[color:var(--color-warm-white)]">
+    <section className="py-16 md:py-20 bg-[color:var(--color-warm-white)]">
       <div className="max-w-[1000px] mx-auto px-6 text-center">
         <Reveal>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-4">
+          <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">
             Guest Stories
           </p>
         </Reveal>
-        <h2 className="font-display text-4xl md:text-5xl text-[color:var(--color-navy-deep)] mb-16">
+        <h2 className="font-display text-4xl md:text-5xl text-[color:var(--color-navy-deep)] mb-10">
           <RevealText text="Moments Worth Remembering" />
         </h2>
 
@@ -55,7 +55,7 @@ export function Testimonials() {
 export function FinalCta() {
   const navigate = useNavigate();
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80"
         alt="Stayora suite terrace"

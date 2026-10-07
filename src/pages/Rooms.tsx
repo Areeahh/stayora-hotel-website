@@ -39,7 +39,7 @@ export default function Rooms() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-navy-deep)] via-[color:var(--color-navy-deep)]/40 to-[color:var(--color-navy-deep)]/60" />
         <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 text-[color:var(--color-warm-white)]">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-soft)] mb-4">Accommodations</p>
+          <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-soft)] mb-2">Accommodations</p>
           <h1 className="font-display text-5xl md:text-6xl"><RevealText text="Rooms & Suites" /></h1>
           {checkIn && checkOut && (
             <p className="mt-4 text-sm text-[color:var(--color-warm-white)]/75">

@@ -48,9 +48,9 @@ export default function RoomDetails() {
 
   return (
     <Layout>
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-32 pb-24">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-28 pb-24">
         <Reveal>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-3">
+          <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">
             {room.category}
           </p>
         </Reveal>

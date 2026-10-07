@@ -49,7 +49,7 @@ export default function Booking() {
 
   return (
     <Layout hideFooter>
-      <div className="max-w-3xl mx-auto px-6 pt-32 pb-32 min-h-screen">
+      <div className="max-w-3xl mx-auto px-6 pt-28 pb-28 min-h-screen">
         <h1 className="font-display text-4xl text-center text-[color:var(--color-navy-deep)] mb-14">
           Complete Your Reservation
         </h1>

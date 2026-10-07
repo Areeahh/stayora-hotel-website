@@ -18,7 +18,7 @@ export function Footer() {
             </div>
 
             <div>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-[color:var(--color-gold-champagne)] mb-5">Explore</p>
+              <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">Explore</p>
               <ul className="space-y-3">
                 {LINKS.map((link) => (
                   <li key={link}>
@@ -34,7 +34,7 @@ export function Footer() {
             </div>
 
             <div>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-[color:var(--color-gold-champagne)] mb-5">
+              <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">
                 Stay in the know
               </p>
               <p className="text-sm text-[color:var(--color-warm-white)]/70 mb-5 max-w-sm">

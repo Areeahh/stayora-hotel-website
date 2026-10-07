@@ -6,8 +6,8 @@ import { Button } from '../components/ui/Button';
 export default function Contact() {
   return (
     <Layout>
-      <section className="pt-32 pb-20 max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-4">Get in Touch</p>
+      <section className="pt-28 pb-10 max-w-[1400px] mx-auto px-6 lg:px-10 text-center">
+        <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">Get in Touch</p>
         <h1 className="font-display text-5xl md:text-6xl text-[color:var(--color-navy-deep)]">
           <RevealText text="Contact Stayora" />
         </h1>

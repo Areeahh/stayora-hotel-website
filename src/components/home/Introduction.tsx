@@ -5,14 +5,14 @@ import { Reveal, RevealText } from '../ui/Reveal';
 
 export function Introduction() {
   return (
-    <section className="py-28 md:py-36 bg-[color:var(--color-warm-white)] overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+    <section className="py-16 md:py-20 bg-[color:var(--color-warm-white)] overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <motion.div
           initial={{ clipPath: 'inset(0 0 100% 0)' }}
           whileInView={{ clipPath: 'inset(0 0 0% 0)' }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative rounded-3xl overflow-hidden h-[420px] md:h-[560px] order-2 lg:order-1"
+          className="relative rounded-3xl overflow-hidden h-[380px] md:h-[460px] order-2 lg:order-1"
         >
           <img
             src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80"
@@ -24,7 +24,7 @@ export function Introduction() {
 
         <div className="order-1 lg:order-2">
           <Reveal>
-            <p className="text-[11px] tracking-[0.3em] uppercase text-[color:var(--color-gold-champagne)] mb-5">
+            <p className="text-2xl md:text-3xl tracking-[0.08em] uppercase font-extrabold text-[color:var(--color-gold-champagne)] mb-2">
               Welcome to Stayora
             </p>
           </Reveal>
@@ -49,7 +49,7 @@ export function Introduction() {
             </Link>
           </Reveal>
 
-          <div className="grid grid-cols-3 gap-6 mt-14 pt-10 border-t border-[color:var(--color-navy-deep)]/10">
+          <div className="grid grid-cols-3 gap-6 mt-10 pt-8 border-t border-[color:var(--color-navy-deep)]/10">
             {[
               { value: '48', label: 'Rooms & Suites' },
               { value: '4.9', label: 'Guest Rating' },
